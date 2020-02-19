@@ -5,26 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script>
+    
     $(document).ready(function() {
-      $("#hide").click(function(){
-        $("p").hide(1000);
-        alert("Now hidden...");
-      });
-      $("#show").click(function(){
-        $("p").show(1000);
+      $("#in1").keypress(function(event){
+        $("#d1").html("Key: " + event.which);
       });
     });
+    
   </script>
   <title>jQuery</title>
 </head>
 <body>
 
-  <p>If you click on the "Hide" button, I will disappear.</p>
-  <p>If you click on the "Hide" button, I will disappear.</p>
-  <p>If you click on the "Hide" button, I will disappear.</p>
-
-  <button id="hide">Hide</button>
-  <button id="show">Show</button>
+  Enter : <input id="in1" type="text">
+  <div id="d1">D1</div>
 
 </body>
 </html>
